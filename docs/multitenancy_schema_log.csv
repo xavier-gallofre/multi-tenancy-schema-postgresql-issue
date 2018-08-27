@@ -1,0 +1,7 @@
+2018-08-27 09:53:42.476 CEST,multitenancy,multitenancy,13094,127.0.0.1:55182,5b83ae06.3326,1,SET,2018-08-27 09:53:42 CEST,4/2773,0,LOG,0,ejecutar <unnamed>: SET extra_float_digits = 3,,,,,,,,,
+2018-08-27 09:53:42.476 CEST,multitenancy,multitenancy,13094,127.0.0.1:55182,5b83ae06.3326,2,SET,2018-08-27 09:53:42 CEST,4/2774,0,LOG,0,ejecutar <unnamed>: SET application_name = 'PostgreSQL JDBC Driver',,,,,,,,,
+2018-08-27 09:53:42.477 CEST,multitenancy,multitenancy,13094,127.0.0.1:55182,5b83ae06.3326,3,SET,2018-08-27 09:53:42 CEST,4/2775,0,LOG,0,ejecutar <unnamed>: SET SESSION CHARACTERISTICS AS TRANSACTION READ ONLY,,,,,,,,,PostgreSQL JDBC Driver
+2018-08-27 09:53:42.478 CEST,multitenancy,multitenancy,13094,127.0.0.1:55182,5b83ae06.3326,4,BEGIN,2018-08-27 09:53:42 CEST,4/2776,0,LOG,0,ejecutar <unnamed>: BEGIN,,,,,,,,,PostgreSQL JDBC Driver
+2018-08-27 09:53:42.478 CEST,multitenancy,multitenancy,13094,127.0.0.1:55182,5b83ae06.3326,5,PARSE,2018-08-27 09:53:42 CEST,4/2776,0,ERROR,42601,error de sintaxis en o cerca de «schema2»,,,,,,SET SCHEMA schema2,12,,PostgreSQL JDBC Driver
+2018-08-27 09:53:42.481 CEST,multitenancy,multitenancy,13094,127.0.0.1:55182,5b83ae06.3326,6,ROLLBACK,2018-08-27 09:53:42 CEST,4/0,0,LOG,0,ejecutar S_1: ROLLBACK,,,,,,,,,PostgreSQL JDBC Driver
+2018-08-27 09:53:42.482 CEST,multitenancy,multitenancy,13094,127.0.0.1:55182,5b83ae06.3326,7,SET,2018-08-27 09:53:42 CEST,4/2777,0,LOG,0,ejecutar <unnamed>: SET SESSION CHARACTERISTICS AS TRANSACTION READ WRITE,,,,,,,,,PostgreSQL JDBC Driver
