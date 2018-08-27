@@ -15,10 +15,12 @@ class Application extends GrailsAutoConfiguration implements ApplicationRunner {
     @Override
     @Transactional
     void run(ApplicationArguments args) throws Exception { // <2>
-        Manufacturer.saveAll( // <3>
-                new Manufacturer(name: 'Audi'),
-                new Manufacturer(name: 'Ford')
-        )
+        if (!Manufacturer.count()) {
+            Manufacturer.saveAll( // <3>
+                    new Manufacturer(name: 'Audi'),
+                    new Manufacturer(name: 'Ford')
+            )
+        }
     }
 
 }
