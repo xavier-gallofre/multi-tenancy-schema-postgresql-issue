@@ -4,9 +4,9 @@ grails:
     codegen:
         defaultPackage: multi.tenancy.schema.postgresql.issue
     gorm:
-        multiTenancy:
-            mode: SCHEMA
-            tenantResolverClass: org.grails.datastore.mapping.multitenancy.web.SubDomainTenantResolver
+#        multiTenancy:
+#            mode: SCHEMA
+#            tenantResolverClass: org.grails.datastore.mapping.multitenancy.web.SubDomainTenantResolver
         reactor:
             # Whether to translate GORM events into Reactor events
             # Disabled by default for performance reasons
