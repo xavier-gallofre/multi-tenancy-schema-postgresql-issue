@@ -2,12 +2,15 @@ package demo
 
 // tag::class[]
 import grails.gorm.multitenancy.CurrentTenant
+import grails.gorm.services.Join
 import grails.gorm.services.Service
 import grails.gorm.transactions.Transactional
 import groovy.transform.CompileStatic
 
+import javax.persistence.criteria.JoinType
+
 @Service(Vehicle) // <1>
-//@CurrentTenant // <2>
+@CurrentTenant // <2>
 @CompileStatic
 abstract class VehicleService {
 // end::class[]
@@ -17,6 +20,7 @@ abstract class VehicleService {
 
     abstract Integer count() // <2>
 
+    @Join(value='engines', type= JoinType.LEFT)
     abstract Vehicle find(Serializable id) // <3>
 
     // end::queries[]

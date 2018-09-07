@@ -18,8 +18,12 @@
             <g:if test="${flash.message}">
                 <div class="message" role="status">${flash.message}</div>
             </g:if>
-            <f:table collection="${vehicleList}" except="manufacturer"/>
 
+            <ul>
+            <g:each in="${vehicleList}">
+                <li>${it.model} (${it.year})</li>
+            </g:each>
+            </ul>
             <div class="pagination">
                 <g:paginate total="${vehicleCount ?: 0}" />
             </div>

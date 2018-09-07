@@ -110,6 +110,7 @@ environments:
       logSql: true
       username: multitenancy
       password: multitenancy
+      schemaHandler: demo.PostgreSQLSchemaHandler
   test:
     dataSource:
       dbCreate: update
